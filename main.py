@@ -20,6 +20,10 @@ print(MFunds.head())
 print(MFunds.shape)
 print(MFunds.info)
 
+[col for col in EFTs.columns if EFTs[col].isnull().any()]
+[col for col in MFunds.columns if MFunds[col].isnull().any()]
+
+
 
 
 
