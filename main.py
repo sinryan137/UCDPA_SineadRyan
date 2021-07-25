@@ -23,8 +23,8 @@ print(MFunds.info)
 [col for col in EFTs.columns if EFTs[col].isnull().any()]
 [col for col in MFunds.columns if MFunds[col].isnull().any()]
 
-
-
+EFTs[EFTs.duplicated()]
+MFunds[MFunds.duplicated()]
 
 
 
